@@ -112,12 +112,12 @@ const Heading = styled.h1`
 
 const Subheading = styled.h2`
   color: rgb(9, 17, 86);
-  font-size: 36px;
+  font-size: 34px;
   margin-top: 1px;
   margin-left: 39px;
   line-height: 36px;
   font-weight: 600;
-  line-height: 45px;
+  line-height: 48px;
 
   @media (min-width: 768px) {
     font-size: 36px;
@@ -144,12 +144,13 @@ const NameWrapper = styled.div`
   flex-direction: column;
   gap: 38px;
   margin-left: 38px;
-  @media (min-width: 768px) {
+  @media (min-width: 1025px) {
     flex-direction: row;
   }
   @media (max-width: 320px) {
     margin-left: 0px;
     margin-right: 0px;
+    gap: 10px;
   }
 `;
 
@@ -168,12 +169,15 @@ const FormInput1 = styled.input`
     width: 242.21px;
     height: 61.58px;
   }
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
   padding: 21px 33px 21px 23px;
   margin-top: 16px;
   @media (max-width: 320px) {
-  margin-left:0px;
-  margin-right: 0px;
-}
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 `;
 
 const FormInput2 = styled.input`
@@ -197,10 +201,13 @@ const FormInput2 = styled.input`
     width: 242.21px;
     height: 61.58px;
   }
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
   @media (max-width: 320px) {
-  margin-left:0px;
-  margin-right: 0px;
-}
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 `;
 
 const FormInput3 = styled.input`
@@ -217,6 +224,7 @@ const FormInput3 = styled.input`
   letter-spacing: 1.6px;
   font-weight: 400;
   line-height: 24px;
+  padding: 21px 33px 21px 23px;
   @media (max-width: 768px) {
     margin-right: 20px;
     margin-bottom: 30px;
@@ -228,10 +236,17 @@ const FormInput3 = styled.input`
     width: 520px;
     height: 61.58px;
   }
-  @media (max-width: 320px) {
-  margin-left:0px;
-  margin-right: 0px;
-}
+
+  width: 92%;
+
+  @media (max-width: 1024px) and (min-width: 426px) {
+    width: 95%;
+  }
+  @media (max-width: 425px) {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
 `;
 
 const FormInput4 = styled.input`
@@ -258,11 +273,18 @@ const FormInput4 = styled.input`
   @media (min-width: 1440px) {
     width: 520px;
     height: 61.58px;
+    margin-left: 38px;
   }
   @media (max-width: 320px) {
-  margin-left:0px;
-  margin-right: 0px;
-}
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  width: 92%;
+
+  @media (max-width: 1024px) and (min-width: 426px) {
+    width: 95%;
+  }
 `;
 
 const FormInput5 = styled.input`
@@ -274,15 +296,18 @@ const FormInput5 = styled.input`
   color: lightgray;
   font-size: 15px;
   letter-spacing: 1px;
-  width: 100%;
   font-size: 16px;
   letter-spacing: 1.6px;
-  width: 100%;
   font-weight: 400;
   line-height: 24px;
   @media (max-width: 768px) {
     margin-right: 20px;
     margin-bottom: 30px;
+  }
+  width: 92%;
+
+  @media (max-width: 1024px) and (min-width: 426px) {
+    width: 95%;
   }
   margin-top: 9px;
   margin-left: 38px;
@@ -292,9 +317,11 @@ const FormInput5 = styled.input`
   }
   padding: 0px 33px 162px 23px;
   @media (max-width: 320px) {
-  margin-left:0px;
-  margin-right: 0px;
-}
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    margin-top: 19px;
+  }
 `;
 
 const SubmitButton = styled.input`
@@ -313,6 +340,12 @@ const SubmitButton = styled.input`
   line-height: 24px;
   letter-spacing: 1.6px;
   text-align: center;
+  @media (max-width: 320px) {
+    margin-left: 0px;
+    margin-right: 0px;
+
+    margin-top: 19px;
+  }
 `;
 
 export default ContactUsComponent;

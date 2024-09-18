@@ -379,10 +379,11 @@ const SliderButton = styled.div`
     padding-top: 107px;
   }
   @media (max-width: 768px) and (min-width: 321px) {
-    padding-top: 157px;
+    padding-top: 50px;
   }
   @media (max-width: 320px) {
     padding-top: 57px;
+    margin-top: 50px;
   }
   img {
     width: 68px;

@@ -63,11 +63,7 @@ const AboutUsContainer = styled.div`
   @media (max-width: 1439px) {
     padding:20px;
   }
-  @media (max-width: 768px) {
-    flex-direction: row;
-    text-align: center;
-    gap: 53px;
-  }
+
 `;
 
 const AboutTitle = styled.h1`
@@ -82,9 +78,11 @@ const AboutTitle = styled.h1`
   @media (max-width: 768px) {
     font-size: 14px;
     margin-top: 0px;
+    text-align: center;
   }
   @media (max-width: 320px) {
     margin-top: 0px;
+    text-align: center;
   }
 `;
 
@@ -96,6 +94,7 @@ const AboutSubtitle = styled.h1`
   font-weight: 600;
   @media (max-width: 768px) {
     font-size: 28px;
+    text-align: center;
   }
 `;
 
@@ -108,6 +107,7 @@ const AboutParagraph = styled.p`
   margin-top: 18px;
   @media (max-width: 768px) {
     font-size: 14px;
+    text-align: center;
   }
   @media (max-width: 320px) {
     br {
@@ -125,11 +125,15 @@ const AboutParagraph2 = styled.p`
   margin-bottom: 47px;
   @media (max-width: 768px) {
     font-size: 14px;
+    margin-bottom: 0px;
+    text-align: center;
   }
   @media (max-width: 320px) {
+    margin-bottom: 20px;
     br {
       display: none;
     }
+    
   }
 `;
 
@@ -146,9 +150,16 @@ const LearnMoreButton = styled.a`
   align-items: center;
 font-weight: 600;
 margin-left:4px;
-  @media (max-width: 768px) {
-    padding: 10px 40px;
+  @media (min-width: 1440px) {
+    padding: 18px 44px;
+  }
+  @media (max-width: 1439px) {
+    padding: 11px 13px;
     font-size: 15px;
+  }
+  @media (max-width: 320px) {
+    padding: 11px 13px;
+    font-size: 11px;
   }
 `;
 const ButtonContainer = styled.div`
@@ -164,9 +175,10 @@ const ButtonContainer = styled.div`
     gap: 10px;
   }
   @media (max-width: 320px) {
-    flex-direction: column; /* Stack vertically on smaller screens */
+     /* Stack vertically on smaller screens */
     align-items: center;
     gap: 10px;
+    margin: 0px;
   }
 `;
 const PlayButton = styled.img`
@@ -176,13 +188,23 @@ const PlayButton = styled.img`
     margin-right: 46px;
 
   @media (max-width: 768px) {
-    margin-top: 15px;
+    margin-top: 4px;
+  }
+  @media (max-width: 320px) {
+     /* Stack vertically on smaller screens */
+  
+    margin: 0px;
   }
 `;
 const PlayWatchContainer = styled.div`
   display: flex;
   align-items: center; /* Align PlayButton and WatchVideoLink on the same row */
    /* Space between PlayButton and WatchVideoLink */
+   @media (max-width: 320px) {
+     /* Stack vertically on smaller screens */
+  
+    margin: 0px;
+  }
 `;
 const WatchVideoLink = styled.a`
   text-decoration: none;
@@ -196,6 +218,14 @@ const WatchVideoLink = styled.a`
   @media (max-width: 768px) {
     font-size: 15px;
     margin-right: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width: 320px) {
+     /* Stack vertically on smaller screens */
+  font-size: 13px;
+    margin: 0px;
+    margin-left: 5px;
   }
 `;
 
@@ -207,6 +237,14 @@ const Image = styled.img`
     padding-top: 42px;
     width: 109%;
     margin-left: -11px;
+    
+  }
+  @media (max-width: 768px) {
+    padding: 0px;
+    margin: 0px;
+align-items: center;
+    width: 100%;
+    
     
   }
   @media (max-width: 320px) {

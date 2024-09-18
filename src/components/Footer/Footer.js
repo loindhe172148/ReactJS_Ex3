@@ -116,18 +116,20 @@ const FooterWrapper = styled.footer`
 `;
 const FooterTextWrapper = styled.div`
   display: flex;
-  gap: 48px; /* Điều chỉnh giá trị gap theo nhu cầu */
+  /* Điều chỉnh giá trị gap theo nhu cầu */
   justify-content: center;
   align-items: center;
-  margin-left: 55px;
-  margin-top: -2px;
-  @media (max-width: 768px) {
-    gap: 24px;
-    margin-left: 0;
+  gap: 24px;
+  margin-left: 0;
+  margin-top: 10px;
+
+  @media (min-width: 1440px) {
+    gap: 48px;
+    margin-left: 55px;
+    margin-top: -2px;
   }
 
   @media (max-width: 320px) {
- 
   }
 `;
 
@@ -142,10 +144,10 @@ const FooterSection = styled.div`
 
   @media (max-width: 320px) {
     @media (max-width: 320px) {
-    margin-top: 15px;
-    flex-direction: row; /* Ensures they are side by side */
-    justify-content: space-between; /* Distributes space evenly */
-  }
+      margin-top: 15px;
+      flex-direction: row; /* Ensures they are side by side */
+      justify-content: space-between; /* Distributes space evenly */
+    }
   }
 `;
 
@@ -175,14 +177,13 @@ const FooterText1 = styled.p`
     margin-left: 66px;
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media (max-width: 320px) {
     font-size: 12px;
     text-align: center;
   }
-
 `;
 const FooterText2 = styled.p`
   font-size: 14px;
@@ -260,6 +261,7 @@ const FooterListItem1 = styled.li`
   margin-bottom: 28px;
   @media (max-width: 768px) {
     font-size: 14px;
+    margin-bottom: 0px;
   }
 
   @media (max-width: 320px) {
@@ -282,7 +284,7 @@ const FooterListItem = styled.li`
     margin-right: 10px; /* Khoảng cách giữa icon và text */
   }
   @media (max-width: 768px) {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   @media (max-width: 320px) {
@@ -301,11 +303,11 @@ const ScrollToTopButton = styled(Button)`
   margin: 40px 53px 20px auto; /* Adjusted margin to move button to the right */
   display: flex;
   justify-content: flex-end; /* Ensure the button is aligned to the right */
-  align-self: flex-end; 
+  align-self: flex-end;
   /* Push the button to the right */
   @media (max-width: 768px) {
     width: 30px;
-    margin:30px 0px 30px auto;
+    margin: 30px 0px 30px auto;
   }
 
   @media (max-width: 320px) {
@@ -314,13 +316,12 @@ const ScrollToTopButton = styled(Button)`
   }
 `;
 
-
 const FooterBottom = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 37px;
-  width: 100%; 
+  width: 100%;
   /* Đảm bảo container rộng đầy đủ */
   @media (max-width: 768px) {
     flex-direction: column;

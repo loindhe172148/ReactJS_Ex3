@@ -111,8 +111,12 @@ const ServicesRow = styled(Row)`
   justify-content: center;
   gap: 20px; /* Adjust gap between cards */
   flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     gap: 63px; /* Larger gap for larger screens */
+  }
+  @media (max-width: 768px) {
+    justify-content: space-evenly;
+    gap: 10px;
   }
 `;
 const ServiceCard = styled.div`
@@ -156,7 +160,7 @@ const ServiceCard = styled.div`
 
   @media (min-width: 769px) {
     box-shadow: 0px 0px 50px 25px #f6f7ff; /* Restored original shadow on larger screens */
-    
+   
     img {
       padding-top: 27px;
     }
@@ -174,20 +178,46 @@ const ServiceCard = styled.div`
   @media (max-width: 768px) {
     box-shadow: 0px 0px 50px 25px #f6f7ff; /* Restored original shadow on larger screens */
     padding-bottom: 0px;
+    margin-top: 50px;
+    width: auto;
     br{
       display: 0px;
     }
     img {
       padding-top: 0px;
+      width: 65%;
     }
 
     h2 {
-      font-size: 18px;
+      font-size: 14px;
       padding-top: 0px;
     }
 
     p {
+      font-size: 12px;
+      padding-top: 0px;
+    }
+  }
+  @media (max-width: 320px) {
+    box-shadow: 0px 0px 50px 25px #f6f7ff; /* Restored original shadow on larger screens */
+    padding-bottom: 0px;
+    margin-top: 50px;
+    width: auto;
+    br{
+      display: 0px;
+    }
+    img {
+      padding-top: 0px;
+      width: 65%;
+    }
+
+    h2 {
       font-size: 14px;
+      padding-top: 0px;
+    }
+
+    p {
+      font-size: 12px;
       padding-top: 0px;
     }
   }

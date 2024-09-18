@@ -58,14 +58,13 @@ const ProfessionalTeamsComponent = () => (
     </Row>
   </StyledContainer>
 );
-
 // Styled components
 const StyledContainer = styled(Container)`
   margin-top: 4px;
   padding: 68px 15px;
 
   @media (max-width: 768px) {
-    padding:  0px;
+    padding: 0px;
   }
 
   @media (min-width: 1440px) {
@@ -110,6 +109,9 @@ const Description = styled.p`
   @media (max-width: 768px) {
     font-size: 15px;
   }
+  @media (max-width: 425px) {
+    margin-bottom: 30px;
+  }
 `;
 
 const TeamMember = styled.div`
@@ -120,7 +122,7 @@ const TeamMember = styled.div`
   padding: 20px 0px 60px 0px;
   transition: box-shadow 0.3s ease;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  margin-top: 100px;
+  margin-top: 50px;
   &:hover {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   }
@@ -163,58 +165,67 @@ const TeamMember = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (min-width: 426px) {
     padding: 0px;
+    margin: auto;
     box-shadow: 0px 0px 50px 25px #f6f7ff;
-    
-br{
-  display: none;
-}
+    margin-top: 50px;
+
+    br {
+      display: none;
+    }
     img {
       width: 46%;
       margin: 0px;
+      margin-top: 30px;
+    }
+
+    h1 {
+      font-size: 15px;
       margin-top: 10px;
     }
 
-    h1 {
-      font-size: 15px;
-      margin-top: 0px;
-    }
-
     h2 {
       font-size: 17px;
-      margin-top: 0px;
+      margin-top: 10px;
     }
 
     p {
       font-size: 15.5px;
-      margin-top: 0px;
+      margin-top: 10px;
     }
   }
-  @media (max-width: 320px) {
-    padding: 0px;
+  @media (min-width: 1440px) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: 426px) {
+    padding-right: 0px;
     padding-top: 10px;
     box-shadow: 0px 0px 50px 25px #f6f7ff;
     margin: 0px;
-
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 10px;
     img {
-      width: 46%;
+      padding-top: 20px;
+      width: 36%;
       margin: 0px;
     }
 
     h1 {
       font-size: 15px;
-      margin-top: 0px;
+      margin-top: 10px;
     }
 
     h2 {
       font-size: 17px;
-      margin-top: 0px;
+      margin-top: 10px;
     }
 
     p {
       font-size: 15.5px;
-      margin-top: 0px;
+      margin-top: 10px;
     }
   }
 `;
@@ -224,12 +235,18 @@ const TeamMemberLeft = styled(TeamMember)`
     margin-left: 52px;
     margin-right: -52px;
   }
+  @media (max-width: 425px) {
+    padding-right: 0px;
+  }
 `;
 
 const TeamMemberRight = styled(TeamMember)`
   @media (min-width: 1440px) {
     margin-left: -30px;
     margin-right: 30px;
+  }
+  @media (max-width: 425px) {
+    padding-right: 0px;
   }
 `;
 const Lienlac = styled.div`
@@ -238,6 +255,10 @@ const Lienlac = styled.div`
     width: 57%;
     max-width: 100%; // Adjust size as needed
     height: auto;
+  }
+  @media (max-width: 768px) {
+    margin-top: 10px;
+    width: 100%;
   }
 `;
 export default ProfessionalTeamsComponent;
