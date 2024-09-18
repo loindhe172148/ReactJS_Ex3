@@ -40,7 +40,7 @@ const ContactUsComponent = () => (
               id="email"
               type="text"
               name="EmailAddress"
-              placeholder="Email Address"
+              placeholder="Email address"
               className="wide"
             />
             <FormInput4
@@ -94,7 +94,7 @@ const TextBox = styled.div`
   justify-content: center;
 
   @media (min-width: 768px) {
-    margin-top: 0;
+    margin-top: -5px;
   }
 `;
 

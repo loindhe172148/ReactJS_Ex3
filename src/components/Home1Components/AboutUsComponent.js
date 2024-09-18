@@ -55,12 +55,12 @@ const AboutUsContainer = styled.div`
   align-items: center;
   
   gap: 20px; /* Apply gap between flex items */
-  @media (min-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
     padding-top: 0px;
         margin-left: 35px;
         gap: 0px;
   }
-  @media (max-width: 1439px) {
+  @media only screen and (max-width: 1439px) {
     padding:20px;
   }
 
@@ -72,15 +72,15 @@ const AboutTitle = styled.h1`
   font-size: 16px;
   line-height: 20px;
   font-weight: 600;
-  @media (min-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
     font-size: 16px;
   }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     font-size: 14px;
     margin-top: 0px;
     text-align: center;
   }
-  @media (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
     margin-top: 0px;
     text-align: center;
   }
@@ -92,7 +92,7 @@ const AboutSubtitle = styled.h1`
   color: #091156;
   line-height: 45px;
   font-weight: 600;
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     font-size: 28px;
     text-align: center;
   }
@@ -105,13 +105,14 @@ const AboutParagraph = styled.p`
   line-height: 24px;
   font-weight: 400;
   margin-top: 18px;
-  @media (max-width: 768px) {
-    font-size: 14px;
+  
+  @media only screen and (max-width: 768px)  {
+    font-size: 13px;
     text-align: center;
   }
-  @media (max-width: 320px) {
-    br {
-      display: none;
+  @media only screen and (max-width: 425px) {
+    & br {
+      display: none !important;
     }
   }
 `;
@@ -123,12 +124,12 @@ const AboutParagraph2 = styled.p`
   font-weight: 400;
   padding-top: 9px;
   margin-bottom: 47px;
-  @media (max-width: 768px) {
-    font-size: 14px;
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
     margin-bottom: 0px;
     text-align: center;
   }
-  @media (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
     margin-bottom: 20px;
     br {
       display: none;
@@ -150,14 +151,14 @@ const LearnMoreButton = styled.a`
   align-items: center;
 font-weight: 600;
 margin-left:4px;
-  @media (min-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
     padding: 18px 44px;
   }
-  @media (max-width: 1439px) {
+  @media only screen and (max-width: 1439px)  {
     padding: 11px 13px;
     font-size: 15px;
   }
-  @media (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
     padding: 11px 13px;
     font-size: 11px;
   }
@@ -169,12 +170,12 @@ const ButtonContainer = styled.div`
   gap: 20px; /* Adjust the spacing between the buttons */
   margin-top: 20px;
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     justify-content:center; /* Stack vertically on smaller screens */
     align-items: center;
     gap: 10px;
   }
-  @media (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
      /* Stack vertically on smaller screens */
     align-items: center;
     gap: 10px;
@@ -187,10 +188,10 @@ const PlayButton = styled.img`
     margin-left: 25px;
     margin-right: 46px;
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     margin-top: 4px;
   }
-  @media (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
      /* Stack vertically on smaller screens */
   
     margin: 0px;
@@ -200,7 +201,7 @@ const PlayWatchContainer = styled.div`
   display: flex;
   align-items: center; /* Align PlayButton and WatchVideoLink on the same row */
    /* Space between PlayButton and WatchVideoLink */
-   @media (max-width: 320px) {
+   @media only screen and (max-width: 320px) {
      /* Stack vertically on smaller screens */
   
     margin: 0px;
@@ -215,13 +216,13 @@ const WatchVideoLink = styled.a`
   margin-top: 1px;
   margin-left: -31px;
 
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     font-size: 15px;
     margin-right: 20px;
     align-items: center;
     text-align: center;
   }
-  @media (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
      /* Stack vertically on smaller screens */
   font-size: 13px;
     margin: 0px;
@@ -232,14 +233,14 @@ const WatchVideoLink = styled.a`
 const Image = styled.img`
   padding-top: 50px;
   width: 100%;
-  @media (min-width: 1440px) {
+  @media only screen and (min-width: 1440px) {
     padding-top: 0px;
     padding-top: 42px;
     width: 109%;
     margin-left: -11px;
     
   }
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     padding: 0px;
     margin: 0px;
 align-items: center;
@@ -247,7 +248,7 @@ align-items: center;
     
     
   }
-  @media (max-width: 320px) {
+  @media only screen and (max-width: 320px) {
     padding: 0px;
     margin: 0px;
 

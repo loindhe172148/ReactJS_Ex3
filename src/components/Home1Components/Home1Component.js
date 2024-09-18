@@ -30,7 +30,7 @@ const Pro = styled.div`
   background-image: url("/Home1/123.png");
   background-size: 100% 60%;
   background-position-x: 100%;
-  background-position-y: 98%;
+  background-position-y: 110%;
   background-repeat: no-repeat;
 
 `;

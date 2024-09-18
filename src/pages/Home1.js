@@ -26,7 +26,7 @@ const Footerbg = styled.div`
   width: auto;
   
   height: auto;
-  background-size: 100% 30%;
+  background-size: 100% 35%;
   box-sizing: border-box;
 `
 export default Home1;

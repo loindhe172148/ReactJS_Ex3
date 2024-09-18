@@ -29,7 +29,7 @@ const ProfessionalTeamsComponent = () => (
         <TeamMember>
           <img src="Home1/unsplash_FVh_yqLR9eA.png" alt="Dermatologist" />
           <h1>Dermatologist</h1>
-          <h2>Bella Sebastian</h2>
+          <h2>Bella sebastian</h2>
           <p>
             Lorem ipsum dolor sit amet,
             <br /> consectetur adipiscing elit ut
@@ -62,7 +62,7 @@ const ProfessionalTeamsComponent = () => (
 const StyledContainer = styled(Container)`
   margin-top: 4px;
   padding: 68px 15px;
-
+  min-height: 100vh;
   @media (max-width: 768px) {
     padding: 0px;
   }
@@ -120,10 +120,12 @@ const TeamMember = styled.div`
   background-color: #fff;
   border-radius: 42px;
   padding: 20px 0px 60px 0px;
-  transition: box-shadow 0.3s ease;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Full width on smaller screens */
+  max-width: 400px; /* Restrict max-width for better readability */
   margin-top: 50px;
   &:hover {
+    /* Apply both transform and box-shadow on hover */
+    transform: scale(1.05);
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   }
   width: 95%;
@@ -191,7 +193,7 @@ const TeamMember = styled.div`
     }
 
     p {
-      font-size: 15.5px;
+      font-size: 14px;
       margin-top: 10px;
     }
   }
@@ -200,32 +202,32 @@ const TeamMember = styled.div`
   }
 
   @media (max-width: 426px) {
-    padding-right: 0px;
-    padding-top: 10px;
-    box-shadow: 0px 0px 50px 25px #f6f7ff;
-    margin: 0px;
-    width: 100%;
-    margin-top: 50px;
-    padding-bottom: 10px;
+    padding: 0px;
+    margin: 0px auto;
+    box-shadow: none;
+    margin-top: 30px;
+    max-width: 280px; /* Shrink the card size on 320px */
     img {
-      padding-top: 20px;
-      width: 36%;
-      margin: 0px;
+      width: 45%; /* Reduce the size of the image further */
+    }
+    img {
+      margin-top: 20px;
     }
 
     h1 {
-      font-size: 15px;
-      margin-top: 10px;
+      font-size: 14px;
+      margin-top: 8px;
     }
 
     h2 {
-      font-size: 17px;
-      margin-top: 10px;
+      font-size: 16px;
+      margin-top: 8px;
     }
 
     p {
-      font-size: 15.5px;
-      margin-top: 10px;
+      font-size: 13.5px;
+      margin-top: 8px;
+      line-height: 18px;
     }
   }
 `;
@@ -252,7 +254,7 @@ const TeamMemberRight = styled(TeamMember)`
 const Lienlac = styled.div`
   img {
     margin-top: 24px;
-    width: 57%;
+    width: 61%;
     max-width: 100%; // Adjust size as needed
     height: auto;
   }

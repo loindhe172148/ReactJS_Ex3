@@ -24,7 +24,7 @@ const Footer = () => {
               <FooterText2>+521 569 8966</FooterText2>
 
               <FooterText>
-                <u>mail@company.com</u>
+                <u>mail@company.com.</u>
               </FooterText>
             </FooterTextWrapper>
           </Col>
@@ -83,7 +83,7 @@ const Footer = () => {
         <FooterBottom>
           <SocialMediaIcon src="Home1/Social Media.png" alt="Social Media" />
           <FooterCopy>
-            &copy; AltDesain Studio 2021 - All rights reserved.
+            &copy; AltDesain Studio 2021 - All right reserved.
           </FooterCopy>
         </FooterBottom>
       </Container>
@@ -102,6 +102,9 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 1440px) {
+  margin-top:67px;
+  padding-top: 191px;}
   @media (max-width: 768px) {
     padding: 50px 0;
     padding-top: 160px;
@@ -125,7 +128,8 @@ const FooterTextWrapper = styled.div`
 
   @media (min-width: 1440px) {
     gap: 48px;
-    margin-left: 55px;
+    margin-left: 59px;
+
     margin-top: -2px;
   }
 
@@ -290,7 +294,8 @@ const FooterListItem = styled.li`
   @media (max-width: 320px) {
     font-size: 12px;
     margin-top: 8px;
-    text-align: center;
+    text-align: start;
+    margin-left: 30px;
   }
 `;
 
@@ -338,8 +343,12 @@ const FooterBottom = styled.div`
 const SocialMediaIcon = styled.img`
   width: 22%;
   max-width: 100%;
-  margin-left: 134px;
-  margin-top: 10px;
+  margin-left: 138px;
+  margin-top: 2px;
+  @media (min-width: 1440px) {
+    width: 305px;
+    height: 27.84px;
+  }
   @media (max-width: 768px) {
     width: 38%;
     margin-left: 0;
@@ -355,7 +364,7 @@ const FooterCopy = styled.p`
   font-size: 16px;
   color: white;
   letter-spacing: 1.6px;
-  margin-right: 126px;
+  margin-right: 136px;
   text-align: center;
   margin-top: 10px;
   @media (max-width: 768px) {
