@@ -56,8 +56,17 @@ const CoreServicesContainer = styled.div`
   margin-top: 60px; /* Adjusted for better spacing */
   background-size: contain;
   padding: 0 15px; /* Added padding for smaller screens */
-
-
+  @media (max-width: 768px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  @media (max-width: 320px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+ 
   @media (min-width: 768px) {
     margin-top: 129px;
     padding: 0;
@@ -76,6 +85,7 @@ const MainServicesTitle = styled.h1`
   @media (min-width: 768px) {
     font-size: 16px;
   }
+ 
 `;
 
 const LearnSubtitle = styled.h2`
@@ -88,10 +98,13 @@ const LearnSubtitle = styled.h2`
   margin-left: 4px;
   font-weight: 600;
 
-  @media (min-width: 768px) {
-    font-size: 36px;
+  @media (max-width: 320px) {
+    br{
+      display: none;
+    }
+    margin: 10px;
   }
-`;
+`; 
 
 const PortaDescription = styled.p`
   color: #8B8B8B;
@@ -105,6 +118,18 @@ const PortaDescription = styled.p`
   @media (min-width: 768px) {
     font-size: 16px;
   }
+  @media (max-width: 768px) {
+    br {
+      display: none;
+      text-align: center;
+    }
+  }
+  @media (max-width: 320px) {
+    br{
+      display: none;
+    }
+    margin: 10px;
+  }
 `;
 const ServicesRow = styled(Row)`
   display: flex;
@@ -117,6 +142,10 @@ const ServicesRow = styled(Row)`
   @media (max-width: 768px) {
     justify-content: space-evenly;
     gap: 10px;
+  }
+  @media (max-width: 320px) {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 `;
 const ServiceCard = styled.div`
@@ -180,6 +209,7 @@ const ServiceCard = styled.div`
     padding-bottom: 0px;
     margin-top: 50px;
     width: auto;
+    gap: 0px;
     br{
       display: 0px;
     }
@@ -194,7 +224,7 @@ const ServiceCard = styled.div`
     }
 
     p {
-      font-size: 12px;
+      font-size: 13px;
       padding-top: 0px;
     }
   }
@@ -217,7 +247,7 @@ const ServiceCard = styled.div`
     }
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       padding-top: 0px;
     }
   }

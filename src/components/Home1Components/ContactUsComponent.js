@@ -64,37 +64,64 @@ const ContactUsComponent = () => (
   </Container>
 );
 
-// Styled components
 const Container = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center; // Center horizontally
+  align-items: center; // Center vertically
   gap: 30px;
 
   @media (max-width: 768px) {
-    flex-direction: row;
+    flex-direction: column; // Stack elements vertically on smaller screens
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+    margin-top: 0px !important;
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+  @media (max-width: 320px) {
+    flex-direction: column; // Stack elements vertically on smaller screens
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+    margin-top: 0px !important;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 `;
 
 const ContactImage = styled.img`
   max-width: 100%;
+
   @media (min-width: 1440px) {
     width: 84%;
     padding-top: 161px;
     margin-left: 69px;
   }
+
   @media (max-width: 768px) {
-    align-items: center;
-    width: 50%;
+    width: 100%; // Reduce the image size to 80% of its container
+    margin: 0 auto 20px;
+  }
+
+  @media (max-width: 320px) {
+    width: 100%; // Further reduce image size for very small screens
+    margin: 0 auto; // Ensure it's centered
   }
 `;
 
 const TextBox = styled.div`
+  @media (min-width: 1440px) {
+    margin-top: -4px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start; // Left-align on larger screens
 
-  @media (min-width: 768px) {
-    margin-top: -5px;
+  @media (max-width: 768px) {
+    align-items: center; // Center-align on smaller screens
+    text-align: center; // Center the text content
+    width: 100%; // Make sure the box takes full width on smaller screens
   }
 `;
 
@@ -106,7 +133,8 @@ const Heading = styled.h1`
   margin-left: 39px;
   line-height: 20px;
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 21px;
+    margin-left: 0px;
   }
 `;
 
@@ -123,6 +151,9 @@ const Subheading = styled.h2`
     font-size: 36px;
     line-height: 48px;
   }
+  @media (max-width: 768px) {
+    margin-left: 0px;
+  }
 `;
 
 const Description = styled.p`
@@ -136,6 +167,7 @@ const Description = styled.p`
   @media (max-width: 768px) {
     font-size: 17px;
     margin-bottom: 49px;
+    margin-left: 0px;
   }
 `;
 
@@ -147,10 +179,10 @@ const NameWrapper = styled.div`
   @media (min-width: 1025px) {
     flex-direction: row;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 768px) {
     margin-left: 0px;
     margin-right: 0px;
-    gap: 10px;
+    gap: 0px;
   }
 `;
 
@@ -177,6 +209,11 @@ const FormInput1 = styled.input`
   @media (max-width: 320px) {
     margin-left: 0px;
     margin-right: 0px;
+    margin: 20px 0px;
+  }
+  @media (max-width: 1024px) and (min-width: 426px) {
+    width: 100%;
+    margin: 20px 0px;
   }
 `;
 
@@ -207,6 +244,11 @@ const FormInput2 = styled.input`
   @media (max-width: 320px) {
     margin-left: 0px;
     margin-right: 0px;
+    margin: 20px 0px;
+  }
+  @media (max-width: 1024px) and (min-width: 426px) {
+    width: 100%;
+    margin: 20px 0px;
   }
 `;
 
@@ -238,14 +280,15 @@ const FormInput3 = styled.input`
   }
 
   width: 92%;
-
   @media (max-width: 1024px) and (min-width: 426px) {
-    width: 95%;
+    width: 100%;
+    margin: 20px 0px;
   }
   @media (max-width: 425px) {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
+    margin: 20px 0px;
   }
 `;
 
@@ -279,11 +322,13 @@ const FormInput4 = styled.input`
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
+    margin: 20px 0px;
   }
   width: 92%;
 
   @media (max-width: 1024px) and (min-width: 426px) {
-    width: 95%;
+    width: 100%;
+    margin: 20px 0px;
   }
 `;
 
@@ -303,11 +348,14 @@ const FormInput5 = styled.input`
   @media (max-width: 768px) {
     margin-right: 20px;
     margin-bottom: 30px;
+    margin: 20px 0px;
   }
   width: 92%;
 
   @media (max-width: 1024px) and (min-width: 426px) {
-    width: 95%;
+    width: 100%;
+    margin: 20px 0px;
+    padding-top: 40px;
   }
   margin-top: 9px;
   margin-left: 38px;
@@ -320,7 +368,7 @@ const FormInput5 = styled.input`
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
-    margin-top: 19px;
+    margin-top: 20px;
   }
 `;
 

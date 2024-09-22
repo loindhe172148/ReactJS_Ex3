@@ -94,7 +94,7 @@ const Footer = () => {
 const FooterWrapper = styled.footer`
   background-image: url("Home1/Footer BG.png");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 100% !important;
   background-position: center;
   padding: 70px 0;
   color: white;
@@ -107,14 +107,14 @@ const FooterWrapper = styled.footer`
   padding-top: 191px;}
   @media (max-width: 768px) {
     padding: 50px 0;
-    padding-top: 160px;
-    background-size: cover;
+    padding-top: 120px;
+    background-size: contain;
   }
 
   @media (max-width: 320px) {
-    padding: 40px 0;
-    padding-top: 120px;
-    background-size: cover;
+    padding: 20px 0;
+    padding-top: 100px;
+    background-size: cover !important;
   }
 `;
 const FooterTextWrapper = styled.div`
@@ -288,7 +288,7 @@ const FooterListItem = styled.li`
     margin-right: 10px; /* Khoảng cách giữa icon và text */
   }
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   @media (max-width: 320px) {

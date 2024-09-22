@@ -9,9 +9,9 @@ const ProfessionalTeamsComponent = () => (
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
     </Description>
-    <Row className="justify-content-center g-4">
-      <Col md={4} className="mb-4">
-        <TeamMemberLeft className="team-member-left">
+    <Row className="justify-content-center ">
+    <TeamMemberLeft as={Col} xs={12} md={4} className="mb-4">
+
           <img src="Home1/unsplash_pTrhfmj2jDA.png" alt="Surgeon" />
           <h1>Surgeon</h1>
           <h2>Briyan Nevalli</h2>
@@ -24,9 +24,9 @@ const ProfessionalTeamsComponent = () => (
             <img src="Home1/Social Media (1).png" alt="" />
           </Lienlac>
         </TeamMemberLeft>
-      </Col>
-      <Col md={4} className="mb-4">
-        <TeamMember>
+
+        <TeamMember as={Col} xs={12} md={4} className="mb-4">
+
           <img src="Home1/unsplash_FVh_yqLR9eA.png" alt="Dermatologist" />
           <h1>Dermatologist</h1>
           <h2>Bella sebastian</h2>
@@ -39,9 +39,10 @@ const ProfessionalTeamsComponent = () => (
             <img src="Home1/Social Media (1).png" alt="" />
           </Lienlac>
         </TeamMember>
-      </Col>
-      <Col md={4} className="mb-4">
-        <TeamMemberRight className="team-member-right">
+
+    
+        <TeamMemberRight as={Col} xs={12} md={4} className="mb-4">
+
           <img src="Home1/unsplash_mEZ3PoFGs_k.png" alt="Stylist expert" />
           <h1>Stylist expert</h1>
           <h2>Lilly Adams</h2>
@@ -54,7 +55,7 @@ const ProfessionalTeamsComponent = () => (
             <img src="Home1/Social Media (1).png" alt="" />
           </Lienlac>
         </TeamMemberRight>
-      </Col>
+
     </Row>
   </StyledContainer>
 );
@@ -65,8 +66,13 @@ const StyledContainer = styled(Container)`
   min-height: 100vh;
   @media (max-width: 768px) {
     padding: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
-
+  @media (max-width: 320px) {
+    padding: 0px;
+    margin: 0px;
+  }
   @media (min-width: 1440px) {
     padding: 68px 0;
   }
@@ -114,8 +120,7 @@ const Description = styled.p`
   }
 `;
 
-const TeamMember = styled.div`
-  margin-left: 11px;
+const TeamMember = styled(Col)`
   text-align: center;
   background-color: #fff;
   border-radius: 42px;
@@ -167,7 +172,7 @@ const TeamMember = styled.div`
     text-align: center;
   }
 
-  @media (max-width: 768px) and (min-width: 426px) {
+  @media (max-width: 768px) and (min-width: 321px) {
     padding: 0px;
     margin: auto;
     box-shadow: 0px 0px 50px 25px #f6f7ff;
@@ -201,14 +206,18 @@ const TeamMember = styled.div`
     margin-top: 100px;
   }
 
-  @media (max-width: 426px) {
+  
+  @media (max-width: 320px) {
     padding: 0px;
-    margin: 0px auto;
+    margin: 0;
     box-shadow: none;
     margin-top: 30px;
+    padding-right: 0px !important;
     max-width: 280px; /* Shrink the card size on 320px */
+    width: 100%; /* Ensure it takes full width of the screen */
+
     img {
-      width: 45%; /* Reduce the size of the image further */
+      width: 40%; /* Reduce the size of the image further */
     }
     img {
       margin-top: 20px;
@@ -225,7 +234,7 @@ const TeamMember = styled.div`
     }
 
     p {
-      font-size: 13.5px;
+      font-size: 14.5px;
       margin-top: 8px;
       line-height: 18px;
     }
@@ -234,18 +243,19 @@ const TeamMember = styled.div`
 // Custom styles for the left and right TeamMember components
 const TeamMemberLeft = styled(TeamMember)`
   @media (min-width: 1440px) {
-    margin-left: 52px;
-    margin-right: -52px;
+    margin-left: -7px;
+        margin-right: 7px;
+
   }
-  @media (max-width: 425px) {
+  @media (max-width: 320px) {
     padding-right: 0px;
   }
 `;
 
 const TeamMemberRight = styled(TeamMember)`
   @media (min-width: 1440px) {
-    margin-left: -30px;
-    margin-right: 30px;
+    margin-left: 6px;
+    margin-right: -6px;
   }
   @media (max-width: 425px) {
     padding-right: 0px;
@@ -263,4 +273,5 @@ const Lienlac = styled.div`
     width: 100%;
   }
 `;
+
 export default ProfessionalTeamsComponent;

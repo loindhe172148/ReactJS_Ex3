@@ -115,6 +115,12 @@ const AboutParagraph = styled.p`
       display: none !important;
     }
   }
+  @media only screen and (max-width: 320px) {
+    font-size: 14px;
+    margin-bottom: 20px;
+    br {
+      display: none;
+    }}
 `;
 const AboutParagraph2 = styled.p`
   font-size: 16px;
@@ -130,6 +136,7 @@ const AboutParagraph2 = styled.p`
     text-align: center;
   }
   @media only screen and (max-width: 320px) {
+    font-size: 14px;
     margin-bottom: 20px;
     br {
       display: none;
@@ -159,8 +166,8 @@ margin-left:4px;
     font-size: 15px;
   }
   @media only screen and (max-width: 425px) {
-    padding: 11px 13px;
-    font-size: 11px;
+    padding: 9px 10px;
+        font-size: 10px;
   }
 `;
 const ButtonContainer = styled.div`
@@ -193,7 +200,7 @@ const PlayButton = styled.img`
   }
   @media only screen and (max-width: 320px) {
      /* Stack vertically on smaller screens */
-  
+  width:30%;
     margin: 0px;
   }
 `;
@@ -224,7 +231,7 @@ const WatchVideoLink = styled.a`
   }
   @media only screen and (max-width: 320px) {
      /* Stack vertically on smaller screens */
-  font-size: 13px;
+  font-size: 12px;
     margin: 0px;
     margin-left: 5px;
   }
