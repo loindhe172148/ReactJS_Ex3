@@ -57,8 +57,7 @@ const CoreServicesContainer = styled.div`
   background-size: contain;
   padding: 0 15px; /* Added padding for smaller screens */
   @media (max-width: 768px) {
-    margin-left: 10px;
-    margin-right: 10px;
+    
   }
   @media (max-width: 320px) {
     margin-left: auto;
@@ -97,12 +96,16 @@ const LearnSubtitle = styled.h2`
   margin-bottom: 0px;
   margin-left: 4px;
   font-weight: 600;
+  @media (max-width: 768px) {
+   margin-left: 0px;
+  }
 
   @media (max-width: 320px) {
     br{
       display: none;
     }
     margin: 10px;
+    font-size: 33px;
   }
 `; 
 
@@ -129,6 +132,7 @@ const PortaDescription = styled.p`
       display: none;
     }
     margin: 10px;
+    font-size: 14px;
   }
 `;
 const ServicesRow = styled(Row)`
@@ -215,7 +219,7 @@ const ServiceCard = styled.div`
     }
     img {
       padding-top: 0px;
-      width: 65%;
+      width: 78%;
     }
 
     h2 {
@@ -224,7 +228,7 @@ const ServiceCard = styled.div`
     }
 
     p {
-      font-size: 13px;
+      font-size: 12px;
       padding-top: 0px;
     }
   }

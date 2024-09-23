@@ -36,6 +36,8 @@ const NavbarHome2 = () => {
                 </TextSlider2>
                 <MoreDetails>
                   <img src="/Home2/More Details Button.png" alt="More Details" />
+                  <img src="http://localhost:3030/Home2/Play Button.png" alt="play button" />
+
                 </MoreDetails>
               </TextCol>
               <ImageCol md={6}>
@@ -73,7 +75,7 @@ const StyledNavbarCollapse = styled(Navbar.Collapse)`
 `;
 
 const Slider = styled.div`
-  background-image: url("/Home2/slider-background.png");
+  background-image: url("/Home2/Background slider.png");
   background-size: cover;
   background-position: center;
   padding: 60px 0;

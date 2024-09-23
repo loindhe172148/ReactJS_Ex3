@@ -318,7 +318,7 @@ const FormInput4 = styled.input`
     height: 61.58px;
     margin-left: 38px;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
@@ -364,7 +364,7 @@ const FormInput5 = styled.input`
     height: 239.47px;
   }
   padding: 0px 33px 162px 23px;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
@@ -388,7 +388,7 @@ const SubmitButton = styled.input`
   line-height: 24px;
   letter-spacing: 1.6px;
   text-align: center;
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     margin-left: 0px;
     margin-right: 0px;
 

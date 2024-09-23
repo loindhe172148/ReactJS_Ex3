@@ -80,7 +80,7 @@ const AboutTitle = styled.h1`
     margin-top: 0px;
     text-align: center;
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
     margin-top: 0px;
     text-align: center;
   }
@@ -115,7 +115,7 @@ const AboutParagraph = styled.p`
       display: none !important;
     }
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
     font-size: 14px;
     margin-bottom: 20px;
     br {
@@ -135,7 +135,7 @@ const AboutParagraph2 = styled.p`
     margin-bottom: 0px;
     text-align: center;
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
     font-size: 14px;
     margin-bottom: 20px;
     br {
@@ -182,7 +182,7 @@ const ButtonContainer = styled.div`
     align-items: center;
     gap: 10px;
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
      /* Stack vertically on smaller screens */
     align-items: center;
     gap: 10px;
@@ -198,7 +198,7 @@ const PlayButton = styled.img`
   @media only screen and (max-width: 768px) {
     margin-top: 4px;
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
      /* Stack vertically on smaller screens */
   width:30%;
     margin: 0px;
@@ -208,7 +208,7 @@ const PlayWatchContainer = styled.div`
   display: flex;
   align-items: center; /* Align PlayButton and WatchVideoLink on the same row */
    /* Space between PlayButton and WatchVideoLink */
-   @media only screen and (max-width: 320px) {
+   @media only screen and (max-width: 425px) {
      /* Stack vertically on smaller screens */
   
     margin: 0px;
@@ -229,7 +229,7 @@ const WatchVideoLink = styled.a`
     align-items: center;
     text-align: center;
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
      /* Stack vertically on smaller screens */
   font-size: 12px;
     margin: 0px;
@@ -255,7 +255,7 @@ align-items: center;
     
     
   }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 425px) {
     padding: 0px;
     margin: 0px;
 
