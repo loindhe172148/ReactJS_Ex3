@@ -6,10 +6,11 @@ import Home2Components from "../components/Home2Components/Home2Components";
 const Home2 = () => {
   return (
     <>
-      <Header page="Home2" />
+      <Header page="home2" />
       <main>
         <Home2Components />
       </main>
+
       <Footer />
     </>
   );

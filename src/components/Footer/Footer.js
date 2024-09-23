@@ -31,10 +31,10 @@ const Footer = () => {
           <Col xs={6} md={3} className="footer-list-col">
             <FooterList1>
               <FooterListItem1>Pages</FooterListItem1>
-              <FooterListItem>
+              <FooterListItem className="home-item">
                 <FontAwesomeIcon icon={faCaretRight} /> Home
               </FooterListItem>
-              <FooterListItem>
+              <FooterListItem className="about-item">
                 <FontAwesomeIcon icon={faCaretRight} /> About
               </FooterListItem>
               <FooterListItem>
@@ -127,10 +127,9 @@ const FooterTextWrapper = styled.div`
   margin-top: 10px;
 
   @media (min-width: 1440px) {
-    gap: 48px;
-    margin-left: 59px;
-
-    margin-top: -2px;
+    gap: 46px;
+        margin-left: 59px;
+        margin-top: -3px;
   }
 
   @media (max-width: 320px) {
@@ -244,7 +243,7 @@ const FooterList = styled.ul`
 const FooterList1 = styled.ul`
   list-style: none;
   padding: 0;
-  margin-left: 50px;
+  margin-left: 52px;
   @media (max-width: 768px) {
     font-size: 16px;
     margin-bottom: 20px;
@@ -263,6 +262,7 @@ const FooterListItem1 = styled.li`
   line-height: 27px;
   letter-spacing: 1.8px;
   margin-bottom: 28px;
+
   @media (max-width: 768px) {
     font-size: 14px;
     margin-bottom: 0px;
@@ -284,13 +284,26 @@ const FooterListItem = styled.li`
   letter-spacing: 1.6px;
   margin-right: 1px;
   margin-left: 4px;
+  @media (min-width: 1440px) {
+    svg {
+    width: 2%;
+  }
+  &.home-item,
+  &.about-item {
+    margin-left: 3px; /* Đặt margin cho Home và About */
+    svg {
+    margin-right: 6px; /* Khoảng cách giữa icon và text */
+  }
+  }
+  }
   svg {
     margin-right: 10px; /* Khoảng cách giữa icon và text */
   }
+ 
   @media (max-width: 768px) {
     font-size: 11px;
   }
-
+ 
   @media (max-width: 320px) {
     font-size: 12px;
     margin-top: 8px;

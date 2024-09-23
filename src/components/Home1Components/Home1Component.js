@@ -28,10 +28,10 @@ const CoreAbout = styled.div`
 `;
 const Pro = styled.div`
   background-image: url("/Home1/123.png");
-  background-size: 100% 60%;
-  background-position-x: 100%;
-  background-position-y: 110%;
-  background-repeat: no-repeat;
+    background-size: 83% 47%;
+    background-position-x: 0%;
+    background-position-y: 85%;
+    background-repeat: no-repeat;
 
 `;
 export default Home1Component;
