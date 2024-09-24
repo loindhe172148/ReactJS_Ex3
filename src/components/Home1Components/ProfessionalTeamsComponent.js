@@ -61,6 +61,9 @@ const RowClass = styled(Row)`
   @media (min-width: 426px) and (max-width: 768px) {
     padding: 0px 80px;
   }
+  @media (max-width: 425px)  {
+    padding: 0px 30px !important;
+  }
   @media (min-width: 1440px) {
     gap: 10px;
   }

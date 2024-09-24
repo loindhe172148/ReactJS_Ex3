@@ -67,8 +67,8 @@ const CoreServicesContainer = styled.div`
   @media (max-width: 320px) {
     margin-left: auto;
     margin-right: auto;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
  
   @media (min-width: 768px) {
