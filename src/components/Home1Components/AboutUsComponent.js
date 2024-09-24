@@ -222,7 +222,11 @@ const WatchVideoLink = styled.a`
   margin-right: 108px;
   margin-top: 1px;
   margin-left: -31px;
+  @media only screen and (max-width: 992px) {
 
+    margin-right: 0px;
+   
+  }
   @media only screen and (max-width: 768px) {
     font-size: 15px;
     margin-right: 20px;
@@ -247,15 +251,20 @@ const Image = styled.img`
     margin-left: -11px;
     
   }
-  @media only screen and (max-width: 768px) {
-    padding: 0px;
+  @media only screen and (max-width: 992px) {
+    padding: 0px 130px;
+    margin: 0px;
+align-items: center;
+   }
+  @media only screen and (max-width: 768px) and (min-width: 426px) {
+    padding: 40px 60px;
     margin: 0px;
 align-items: center;
     width: 100%;
     
     
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 426px) {
     padding: 0px;
     margin: 0px;
 

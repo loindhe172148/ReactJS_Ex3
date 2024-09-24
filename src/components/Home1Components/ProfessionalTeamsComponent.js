@@ -58,13 +58,13 @@ const ProfessionalTeamsComponent = () => (
 const RowClass = styled(Row)`
   padding: 0px;
   margin: 0px !important;
-  @media (min-width: 426px) and (max-width: 768px) {
-    padding: 0px 80px;
+  @media (max-width: 769px)  {
+    padding: 0px 130px;
   }
-  @media (max-width: 425px)  {
-    padding: 0px 30px !important;
+  @media (max-width: 426px)  {
+    padding: 0px 20px !important;
   }
-  @media (min-width: 1440px) {
+  @media (max-width: 1440px) {
     gap: 10px;
   }
 `;
@@ -139,9 +139,10 @@ const TeamMember = styled(Col)`
   margin-top: 50px;
   &:hover {
     /* Apply both transform and box-shadow on hover */
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
   }
+  
   width: 95%;
   img {
     width: 36%;
@@ -181,6 +182,9 @@ const TeamMember = styled(Col)`
     text-align: center;
   }
   @media (max-width: 1024px) {
+    br{
+      display: none;
+    }
     padding-bottom: 0px;
     padding-top: 0px;
   }
@@ -189,7 +193,7 @@ const TeamMember = styled(Col)`
     margin: auto;
     box-shadow: 0px 0px 50px 25px #f6f7ff;
     margin-top: 50px;
-    max-width: 60%;
+    max-width: 100%;
 
     br {
       display: none;

@@ -70,7 +70,7 @@ const ContainerStyle =styled(Container)`
 
 `;
 const StyledNavbar = styled(Navbar)`
-flex-wrap: nowrap;
+
 @media (min-width: 1440px) {
     padding: 20px;
     padding-top: 29px;
@@ -134,8 +134,12 @@ const Home1Link = styled(Nav.Link)`
   @media (min-width: 769px) {
     text-align: center;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     text-align: center;
+    margin-left: 0px;
+    background-color: rgb(248, 249, 255);
+    margin-top: 0px;
+    border: 1px solid black;
   }
 `;
 
@@ -152,8 +156,12 @@ const Home2Link = styled(Nav.Link)`
     margin-top: 5px;
     margin-left: 29px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     text-align: center;
+    margin-left: 0px;
+    background-color: rgb(248, 249, 255);
+    margin-top: 0px;
+    border: 1px solid black;
   }
 `;
 
@@ -171,8 +179,12 @@ const Home3Link = styled(Nav.Link)`
     margin-top: 5px;
     margin-left: 27px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     text-align: center;
+    margin-left: 0px;
+    background-color: rgb(248, 249, 255);
+    margin-top: 0px;
+    border: 1px solid black;
   }
 `;
 
@@ -186,8 +198,12 @@ const Home4Link = styled(Nav.Link)`
     margin-top: 5px;
     margin-left: 30px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     text-align: center;
+    margin-left: 0px;
+    background-color: rgb(248, 249, 255);
+    margin-top: 0px;
+    border: 1px solid black;
   }
 `;
 
@@ -201,8 +217,12 @@ const Home5Link = styled(Nav.Link)`
     margin-top: 6px;
     margin-left: 31px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     text-align: center;
+    margin-left: 0px;
+    background-color: rgb(248, 249, 255);
+    margin-top: 0px;
+    border: 1px solid black;
   }
 `;
 
@@ -219,9 +239,14 @@ const Home6Link = styled(Nav.Link)`
     padding: 12px 40px 15px 40px !important;
     color: white;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     color: #8b8b8b;
     text-align: center;
+    background-color: rgb(248, 249, 255);
+    margin-left: 0px;
+    border-radius: 0px ;
+    margin-top: 0px;
+    border: 1px solid black;
   }
 `;
 // Wrapper for the entire slider
@@ -376,6 +401,7 @@ const ClinicImage = styled.img`
     display: flex;
     align-items: center;
     margin-top: 100px;
+    padding: 20px;
   }
 `;
 

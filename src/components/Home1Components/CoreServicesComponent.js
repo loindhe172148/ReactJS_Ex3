@@ -55,6 +55,7 @@ const ColStyles =styled(Col)`
 @media (max-width: 768px) {
     margin: 0px;
     padding: 0px 10px;
+    flex-basis: 100%; /* Ensure each card takes the full width */
   }`;
 const CoreServicesContainer = styled.div`
   text-align: center;
@@ -145,13 +146,17 @@ const ServicesRow = styled(Row)`
   justify-content: center;
   gap: 20px; /* Adjust gap between cards */
   flex-wrap: wrap; /* Ensure responsiveness for smaller screens */
-  @media (min-width: 769px) {
+  @media (min-width: 1024px) {
     gap: 63px; /* Larger gap for larger screens */
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1024px) and (min-width: 427px) {
     justify-content: space-evenly;
     gap: 10px;
-    padding: 0px 80px;
+
+  }
+  @media (max-width: 426px) and (min-width:322px) {
+   padding: 0px 30px ;
+
   }
  
   @media (max-width: 320px) {
@@ -169,8 +174,7 @@ const ServiceCard = styled.div`
   width: 100%;
   padding:30px 5px;
   padding-bottom: 51px;
- 
-  @media (min-width: 1440px) {
+  @media (min-width: 769px) {
     margin-top: 69px;
   }
   &:hover {
@@ -198,7 +202,36 @@ const ServiceCard = styled.div`
     color: #8b8b8b;
     padding-top: 10px; /* Adjusted padding for better responsiveness */
   }
+  @media (max-width: 768px) and (min-width: 426px) {
+    margin-top: 69px;
+    width: 50%;
+    
+  }
+  &:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
 
+  img {
+     /* Adjusted padding for better responsiveness */
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 18px; /* Adjusted font size for responsiveness */
+    font-weight: 600;
+    line-height: 22.5px;
+    color: #091156;
+    padding-top: 20px; /* Adjusted padding for better responsiveness */
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height:21px;
+    letter-spacing: 1.4px;
+    color: #8b8b8b;
+    padding-top: 10px; /* Adjusted padding for better responsiveness */
+  }
   @media (min-width: 769px) {
     box-shadow: 0px 0px 50px 25px #f6f7ff; /* Restored original shadow on larger screens */
    
@@ -216,11 +249,10 @@ const ServiceCard = styled.div`
       padding-top: 12px;
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1024px) and (min-width: 769px) {
     box-shadow: 0px 0px 50px 25px #f6f7ff; /* Restored original shadow on larger screens */
     padding-bottom: 0px;
     margin-top: 50px;
-    width: auto;
     gap: 0px;
     br{
       display: 0px;

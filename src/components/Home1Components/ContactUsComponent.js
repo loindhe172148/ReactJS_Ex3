@@ -102,7 +102,7 @@ const ContactImage = styled.img`
 
   @media (max-width: 768px) and (min-width: 321px) {
     width: 100%; // Reduce the image size to 80% of its container
-    padding: 0px 80px;
+    padding: 20px;
   }
 
   @media (max-width: 320px) {
@@ -358,7 +358,7 @@ const FormInput5 = styled.input`
   @media (max-width: 1024px) and (min-width: 426px) {
     width: 100%;
     margin: 20px 0px;
-    padding-top: 40px;
+    padding-top: 30px;
   }
   margin-top: 9px;
   margin-left: 38px;
@@ -367,11 +367,11 @@ const FormInput5 = styled.input`
     height: 239.47px;
   }
   padding: 0px 33px 162px 23px;
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     margin-left: 0px;
     margin-right: 0px;
     width: 100%;
-    margin-top: 20px;
+    padding: 21px 33px 145px 23px;
   }
 `;
 

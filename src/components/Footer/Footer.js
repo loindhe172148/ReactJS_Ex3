@@ -16,36 +16,38 @@ const Footer = () => {
         <FooterSection>
           <Col xs={12} md={6} className="d-flex flex-column align-items-center">
             <FooterLogo src="Home1/Footer Logo.png" alt="Footer Logo" />
-            <FooterText1>
-              <strong>Beautice</strong> is a Beauty Clinic WordPress Theme.
-            </FooterText1>
-            <FooterText>Baker Steet 101, NY, United States.</FooterText>
-            <FooterTextWrapper>
-              <FooterText2>+521 569 8966</FooterText2>
+            <FooterGroup>
+              <FooterText1>
+                <strong>Beautice</strong> is a Beauty Clinic WordPress Theme.
+              </FooterText1>
+              <FooterText>Baker Steet 101, NY, United States.</FooterText>
+              <FooterTextWrapper>
+                <FooterText2>+521 569 8966</FooterText2>
 
-              <FooterText>
-                <u>mail@company.com.</u>
-              </FooterText>
-            </FooterTextWrapper>
+                <FooterText>
+                  <u>mail@company.com.</u>
+                </FooterText>
+              </FooterTextWrapper>
+            </FooterGroup>
           </Col>
           <Col xs={6} md={3} className="footer-list-col">
             <FooterList1>
               <FooterListItem1>Pages</FooterListItem1>
-              <FooterListItem className="home-item">
+              <FooterListItem className="home-item home">
                 <FontAwesomeIcon icon={faCaretRight} /> Home
               </FooterListItem>
-              <FooterListItem className="about-item">
+              <FooterListItem className="about-item about">
                 <FontAwesomeIcon icon={faCaretRight} /> About
               </FooterListItem>
-              <FooterListItem>
+              <FooterListItem className="services">
                 <FontAwesomeIcon icon={faCaretRight} />
                 Services
               </FooterListItem>
-              <FooterListItem>
+              <FooterListItem className="gallery"> 
                 <FontAwesomeIcon icon={faCaretRight} />
                 Gallery
               </FooterListItem>
-              <FooterListItem>
+              <FooterListItem className="team">  
                 <FontAwesomeIcon icon={faCaretRight} />
                 Team
               </FooterListItem>
@@ -91,6 +93,15 @@ const Footer = () => {
   );
 };
 // Styled components
+const FooterGroup = styled.div`
+display:flex;
+flex-direction: column;
+justify-content: start;
+margin-left: 64px;
+@media (max-width: 320px) {
+    margin-left: 0px;
+  }
+`;
 const FooterWrapper = styled.footer`
   background-image: url("Home1/Footer BG.png");
   background-repeat: no-repeat;
@@ -103,8 +114,9 @@ const FooterWrapper = styled.footer`
   justify-content: center;
   align-items: center;
   @media (min-width: 1440px) {
-  margin-top:67px;
-  padding-top: 191px;}
+    margin-top: 67px;
+    padding-top: 191px;
+  }
   @media (max-width: 768px) {
     padding: 50px 0;
     padding-top: 120px;
@@ -120,7 +132,7 @@ const FooterWrapper = styled.footer`
 const FooterTextWrapper = styled.div`
   display: flex;
   /* Điều chỉnh giá trị gap theo nhu cầu */
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 24px;
   margin-left: 0;
@@ -128,11 +140,11 @@ const FooterTextWrapper = styled.div`
 
   @media (min-width: 1440px) {
     gap: 46px;
-        margin-left: 59px;
-        margin-top: -3px;
+    margin-top: -3px;
   }
 
   @media (max-width: 320px) {
+    justify-content: center;
   }
 `;
 
@@ -162,7 +174,7 @@ const FooterLogo = styled.img`
     margin-top: 25px;
   }
   @media (max-width: 768px) {
-    width: 50%;
+    width: 40%;
   }
 
   @media (max-width: 320px) {
@@ -177,14 +189,10 @@ const FooterText1 = styled.p`
   margin-top: 32px;
   line-height: 24px;
   @media (min-width: 1440px) {
-    margin-left: 66px;
   }
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
+ 
 
-  @media (max-width: 320px) {
-    font-size: 12px;
+  @media (max-width: 375px) {
     text-align: center;
   }
 `;
@@ -203,7 +211,7 @@ const FooterText2 = styled.p`
   }
 
   @media (max-width: 320px) {
-    font-size: 10px;
+
   }
 `;
 const FooterText = styled.p`
@@ -212,7 +220,6 @@ const FooterText = styled.p`
   letter-spacing: 1.6px;
   color: #ffffff;
   margin-top: 7px;
-  margin-right: 86px;
   line-height: 21px;
   font-style: italic;
   margin-bottom: 0px;
@@ -221,8 +228,8 @@ const FooterText = styled.p`
     margin-right: 20px;
   }
 
-  @media (max-width: 320px) {
-    font-size: 10px;
+  @media (max-width: 375px) {
+   
     margin-right: 0;
     text-align: center;
   }
@@ -235,7 +242,7 @@ const FooterList = styled.ul`
     margin-left: 30px;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 375px) {
     margin-left: 0;
     text-align: center;
   }
@@ -247,6 +254,13 @@ const FooterList1 = styled.ul`
   @media (max-width: 768px) {
     font-size: 16px;
     margin-bottom: 20px;
+  }
+  @media (max-width: 767px) and (min-width: 426px) {
+display: flex;
+flex-direction: column;
+align-items: end;
+margin-right: 46px;
+text-align: start;
   }
 
   @media (max-width: 320px) {
@@ -262,14 +276,14 @@ const FooterListItem1 = styled.li`
   line-height: 27px;
   letter-spacing: 1.8px;
   margin-bottom: 28px;
-
+  @media (max-width: 768px) and  (min-width: 426px) {
+    margin-right: 34px;
+  }
   @media (max-width: 768px) {
-    font-size: 14px;
     margin-bottom: 0px;
   }
 
-  @media (max-width: 320px) {
-    font-size: 12px;
+  @media (max-width: 375px) {
     margin-top: 8px;
     text-align: center;
     margin-bottom: 0px;
@@ -284,28 +298,41 @@ const FooterListItem = styled.li`
   letter-spacing: 1.6px;
   margin-right: 1px;
   margin-left: 4px;
+  @media (max-width: 767px) and (min-width: 426px) {
+ &.home{
+  margin-right: 22px;
+ }
+ &.services{
+  
+ }&.about{
+  margin-right: 19px;
+ }&.gallery{
+  margin-right: 13px;
+
+ }&.team{
+  margin-right: 28px;
+
+ }
+  }
   @media (min-width: 1440px) {
     svg {
-    width: 2%;
-  }
-  &.home-item,
-  &.about-item {
-    margin-left: 3px; /* Đặt margin cho Home và About */
-    svg {
-    margin-right: 6px; /* Khoảng cách giữa icon và text */
-  }
-  }
+      width: 2%;
+    }
+    &.home-item,
+    &.about-item {
+      margin-left: 3px; /* Đặt margin cho Home và About */
+      svg {
+        margin-right: 6px; /* Khoảng cách giữa icon và text */
+      }
+    }
   }
   svg {
     margin-right: 10px; /* Khoảng cách giữa icon và text */
   }
- 
-  @media (max-width: 768px) {
-    font-size: 11px;
-  }
- 
+
+  
+
   @media (max-width: 320px) {
-    font-size: 12px;
     margin-top: 8px;
     text-align: start;
     margin-left: 30px;
@@ -367,8 +394,8 @@ const SocialMediaIcon = styled.img`
     margin-left: 0;
   }
 
-  @media (max-width: 320px) {
-    width: 40%;
+  @media (max-width: 425px) {
+    width: 70%;
     margin-top: 5px;
   }
 `;
@@ -381,12 +408,10 @@ const FooterCopy = styled.p`
   text-align: center;
   margin-top: 10px;
   @media (max-width: 768px) {
-    font-size: 14px;
     margin-right: 0;
   }
 
   @media (max-width: 320px) {
-    font-size: 12px;
     margin-top: 5px;
   }
 `;
