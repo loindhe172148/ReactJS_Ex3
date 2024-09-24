@@ -58,15 +58,14 @@ const ProfessionalTeamsComponent = () => (
 const RowClass = styled(Row)`
   padding: 0px;
   margin: 0px !important;
+  gap: 10px;
   @media (max-width: 769px)  {
     padding: 0px 130px;
   }
   @media (max-width: 426px)  {
     padding: 0px 20px !important;
   }
-  @media (max-width: 1440px) {
-    gap: 10px;
-  }
+
 `;
 const StyledContainer = styled(Container)`
   margin-top: 4px;
