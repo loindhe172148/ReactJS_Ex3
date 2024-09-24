@@ -15,7 +15,7 @@ const ContactUsComponent = () => (
       </div>
       <div className="col-lg-6 col-md-12">
         <TextBox>
-          <Heading id="contactus">Contact us</Heading>
+          <Heading id="contactus">Contact Us</Heading>
           <Subheading id="sendyour">
             Send your Inquiry to <br />
             our expert team
