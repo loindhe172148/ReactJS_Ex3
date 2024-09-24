@@ -15,7 +15,7 @@ const CoreSerivcesComponent = () => (
     </PortaDescription>
 
     <ServicesRow> {/* Center the row */}
-  <ColStyles xs={12} sm={6} md={3} className="mb-3 d-flex justify-content-center"> {/* Center each card */}
+  <Col xs={12} sm={6} md={3} className="mb-3 d-flex justify-content-center"> {/* Center each card */}
     <ServiceCard>
       <img src="Home1/Animation1 (1).png" alt="Beauty consultation" />
       <h2>Beauty consultation</h2>
@@ -23,9 +23,9 @@ const CoreSerivcesComponent = () => (
         Non parturient amet, feugiat <br/>tellus sagittis, scelerisque eget<br/> nulla turpis.
       </p>
     </ServiceCard>
-  </ColStyles>
+  </Col>
 
-  <ColStyles xs={12} sm={6} md={3} className="mb-3 d-flex justify-content-center">
+  <Col xs={12} sm={6} md={3} className="mb-3 d-flex justify-content-center">
     <ServiceCard>
       <img src="Home1/Animation2.png" alt="Skin treatments" />
       <h2>Skin treatments</h2>
@@ -33,9 +33,9 @@ const CoreSerivcesComponent = () => (
         Non parturient amet, feugiat <br/>tellus sagittis, scelerisque eget <br/>nulla turpis.
       </p>
     </ServiceCard>
-  </ColStyles>
+  </Col>
 
-  <ColStyles xs={12} sm={6} md={3} className="mb-3 d-flex justify-content-center">
+  <Col xs={12} sm={6} md={3} className="mb-3 d-flex justify-content-center">
     <ServiceCard>
       <img src="Home1/Animation3.png" alt="Beauty product" />
       <h2>Beauty product</h2>
@@ -43,7 +43,7 @@ const CoreSerivcesComponent = () => (
         Non parturient amet, feugiat <br/>tellus sagittis, scelerisque eget<br/> nulla turpis.
       </p>
     </ServiceCard>
-  </ColStyles>
+  </Col>
 </ServicesRow>
 
   </CoreServicesContainer>
@@ -51,11 +51,6 @@ const CoreSerivcesComponent = () => (
 
 
 // Styled components
-const ColStyles =styled(Col)`
-@media (max-width: 768px) {
-    margin: 0px;
-    padding: 0px 10px;
-  }`;
 const CoreServicesContainer = styled.div`
   text-align: center;
   margin-top: 60px; /* Adjusted for better spacing */
@@ -122,7 +117,7 @@ const PortaDescription = styled.p`
   margin-top: 21px;
   margin-left: 2px;
   font-weight: 400;
-  
+
   @media (min-width: 768px) {
     font-size: 16px;
   }
@@ -148,16 +143,13 @@ const ServicesRow = styled(Row)`
   @media (min-width: 769px) {
     gap: 63px; /* Larger gap for larger screens */
   }
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     justify-content: space-evenly;
     gap: 10px;
-    padding: 0px 80px;
   }
- 
   @media (max-width: 320px) {
     margin-left: 0px;
     margin-right: 0px;
-    padding: 0px 10px;
   }
 `;
 const ServiceCard = styled.div`
@@ -169,7 +161,7 @@ const ServiceCard = styled.div`
   width: 100%;
   padding:30px 5px;
   padding-bottom: 51px;
- 
+
   @media (min-width: 1440px) {
     margin-top: 69px;
   }
@@ -216,7 +208,7 @@ const ServiceCard = styled.div`
       padding-top: 12px;
     }
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     box-shadow: 0px 0px 50px 25px #f6f7ff; /* Restored original shadow on larger screens */
     padding-bottom: 0px;
     margin-top: 50px;
@@ -238,9 +230,6 @@ const ServiceCard = styled.div`
     p {
       font-size: 12px;
       padding-top: 0px;
-      br{
-        display: none;
-      }
     }
   }
   @media (max-width: 320px) {

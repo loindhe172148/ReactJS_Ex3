@@ -27,9 +27,9 @@ const NavbarHome1 = () => {
 
         {/* Main Header */}
         <MainHeader>
-          <ContainerStyle >
+          <Container >
             <div className="row">
-              <HeaderLeft className="col-md-12 col-lg-6  text-lg-left ">
+              <HeaderLeft className="col-lg-6 col-md-12">
                 <ClinicHeading>
                   Clinic & beauty
                   <br />
@@ -43,7 +43,7 @@ const NavbarHome1 = () => {
                   More Details
                 </MoreDetailLink>
               </HeaderLeft>
-              <HeaderRight className="col-md-12 col-lg-6 ">
+              <HeaderRight className="col-lg-6 col-md-12">
                 <ClinicImage
                   className="img-fluid anh2"
                   src="/Home1/Frame 1.png"
@@ -51,7 +51,7 @@ const NavbarHome1 = () => {
                 />
               </HeaderRight>
             </div>
-          </ContainerStyle>
+          </Container>
         </MainHeader>
       </Slider>
       <SliderButton id="sliderbt" className="text-center mt-3">
@@ -66,11 +66,7 @@ const NavbarHome1 = () => {
 };
 
 // Styled Components
-const ContainerStyle =styled(Container)`
-
-`;
 const StyledNavbar = styled(Navbar)`
-flex-wrap: nowrap;
 @media (min-width: 1440px) {
     padding: 20px;
     padding-top: 29px;
@@ -236,7 +232,6 @@ const Slider = styled.div`
 // Main header container
 const MainHeader = styled.div`
   @media (min-width: 769px) and (max-width: 1439px) {
-    flex-wrap: nowrap;
     margin-top: 50px; /* Giảm margin để phù hợp với màn hình nhỏ hơn */
     margin-left: auto;
     margin-right: auto;
@@ -272,10 +267,8 @@ const HeaderLeft = styled.div`
     align-items: center;
     text-align: center;
   }
-  @media (max-width: 991px) and (min-width: 768px) {
-    text-align: center;
-  }
-  @media (min-width: 992px) and (max-width: 1439px) {
+
+  @media (min-width: 769px) and (max-width: 1439px) {
     text-align: left; /* Đảm bảo văn bản căn trái cho màn hình nhỏ hơn */
   }
 
@@ -294,10 +287,7 @@ const HeaderRight = styled.div`
     align-items: center;
     text-align: center;
   }
-  @media (max-width: 991px) and (min-width: 768px) {
-  .custom-text-center {
-    text-align: center;
-  }}
+
   @media (min-width: 769px) and (max-width: 1439px) {
     justify-content: flex-end;
     align-items: flex-end; /* Đẩy phần hình ảnh về bên phải */
@@ -366,13 +356,13 @@ const MoreDetailLink = styled.a`
 
 // Clinic image
 const ClinicImage = styled.img`
-  width: 100%;
+  width: 635px;
   max-width: 100%;
   @media (min-width: 1440px) {
     margin-top: -58px;
     margin-left: -138px;
   }
-  @media  (max-width: 992px) {
+  @media  (max-width: 768px) {
     display: flex;
     align-items: center;
     margin-top: 100px;
@@ -381,8 +371,7 @@ const ClinicImage = styled.img`
 
 // Styled slider button
 const SliderButton = styled.div`
-  width: 100%;
-  max-width: 100%;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: fit-content;

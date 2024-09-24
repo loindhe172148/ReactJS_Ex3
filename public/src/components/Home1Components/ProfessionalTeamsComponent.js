@@ -9,71 +9,64 @@ const ProfessionalTeamsComponent = () => (
     <Description>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam.
     </Description>
-    <RowClass className="justify-content-center ">
-      <TeamMemberLeft as={Col} xs={12} md={4} className="mb-4">
-        <img src="Home1/unsplash_pTrhfmj2jDA.png" alt="Surgeon" />
-        <h1>Surgeon</h1>
-        <h2>Briyan Nevalli</h2>
-        <p>
-          Lorem ipsum dolor sit amet,
-          <br /> consectetur adipiscing elit ut
-          <br /> aliquam, purus sit
-        </p>
-        <Lienlac>
-          <img src="Home1/Social Media (1).png" alt="" />
-        </Lienlac>
-      </TeamMemberLeft>
+    <Row className="justify-content-center ">
+    <TeamMemberLeft as={Col} xs={12} md={4} className="mb-4">
 
-      <TeamMember as={Col} xs={12} md={4} className="mb-4">
-        <img src="Home1/unsplash_FVh_yqLR9eA.png" alt="Dermatologist" />
-        <h1>Dermatologist</h1>
-        <h2>Bella sebastian</h2>
-        <p>
-          Lorem ipsum dolor sit amet,
-          <br /> consectetur adipiscing elit ut
-          <br /> aliquam, purus sit
-        </p>
-        <Lienlac>
-          <img src="Home1/Social Media (1).png" alt="" />
-        </Lienlac>
-      </TeamMember>
+          <img src="Home1/unsplash_pTrhfmj2jDA.png" alt="Surgeon" />
+          <h1>Surgeon</h1>
+          <h2>Briyan Nevalli</h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            <br /> consectetur adipiscing elit ut
+            <br /> aliquam, purus sit
+          </p>
+          <Lienlac>
+            <img src="Home1/Social Media (1).png" alt="" />
+          </Lienlac>
+        </TeamMemberLeft>
 
-      <TeamMemberRight as={Col} xs={12} md={4} className="mb-4">
-        <img src="Home1/unsplash_mEZ3PoFGs_k.png" alt="Stylist expert" />
-        <h1>Stylist expert</h1>
-        <h2>Lilly Adams</h2>
-        <p>
-          Lorem ipsum dolor sit amet,
-          <br /> consectetur adipiscing elit ut
-          <br /> aliquam, purus sit
-        </p>
-        <Lienlac>
-          <img src="Home1/Social Media (1).png" alt="" />
-        </Lienlac>
-      </TeamMemberRight>
-    </RowClass>
+        <TeamMember as={Col} xs={12} md={4} className="mb-4">
+
+          <img src="Home1/unsplash_FVh_yqLR9eA.png" alt="Dermatologist" />
+          <h1>Dermatologist</h1>
+          <h2>Bella sebastian</h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            <br /> consectetur adipiscing elit ut
+            <br /> aliquam, purus sit
+          </p>
+          <Lienlac>
+            <img src="Home1/Social Media (1).png" alt="" />
+          </Lienlac>
+        </TeamMember>
+
+    
+        <TeamMemberRight as={Col} xs={12} md={4} className="mb-4">
+
+          <img src="Home1/unsplash_mEZ3PoFGs_k.png" alt="Stylist expert" />
+          <h1>Stylist expert</h1>
+          <h2>Lilly Adams</h2>
+          <p>
+            Lorem ipsum dolor sit amet,
+            <br /> consectetur adipiscing elit ut
+            <br /> aliquam, purus sit
+          </p>
+          <Lienlac>
+            <img src="Home1/Social Media (1).png" alt="" />
+          </Lienlac>
+        </TeamMemberRight>
+
+    </Row>
   </StyledContainer>
 );
 // Styled components
-const RowClass = styled(Row)`
-  padding: 0px;
-  margin: 0px !important;
-  @media (min-width: 426px) and (max-width: 768px) {
-    padding: 0px 80px;
-  }
-  @media (min-width: 1440px) {
-    gap: 10px;
-  }
-`;
 const StyledContainer = styled(Container)`
   margin-top: 4px;
   padding: 68px 15px;
   min-height: 100vh;
   @media (max-width: 768px) {
     padding: 0px;
-  }
-  @media (max-width: 1024px) {
-    padding-left: 0px;
+   
   }
   @media (max-width: 320px) {
     padding: 0px;
@@ -132,7 +125,7 @@ const TeamMember = styled(Col)`
   border-radius: 42px;
   padding: 20px 0px 60px 0px;
   width: 100%; /* Full width on smaller screens */
-  max-width: 30%; /* Restrict max-width for better readability */
+  max-width: 400px; /* Restrict max-width for better readability */
   margin-top: 50px;
   &:hover {
     /* Apply both transform and box-shadow on hover */
@@ -177,16 +170,12 @@ const TeamMember = styled(Col)`
     align-items: center;
     text-align: center;
   }
-  @media (max-width: 1024px) {
-    padding-bottom: 0px;
-    padding-top: 0px;
-  }
+
   @media (max-width: 768px) and (min-width: 321px) {
     padding: 0px;
     margin: auto;
     box-shadow: 0px 0px 50px 25px #f6f7ff;
     margin-top: 50px;
-    max-width: 60%;
 
     br {
       display: none;
@@ -216,6 +205,7 @@ const TeamMember = styled(Col)`
     margin-top: 100px;
   }
 
+  
   @media (max-width: 320px) {
     padding: 0px;
     margin: 0;
@@ -252,8 +242,9 @@ const TeamMember = styled(Col)`
 // Custom styles for the left and right TeamMember components
 const TeamMemberLeft = styled(TeamMember)`
   @media (min-width: 1440px) {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: -7px;
+        margin-right: 7px;
+
   }
   @media (max-width: 320px) {
     padding-right: 0px;
@@ -262,8 +253,8 @@ const TeamMemberLeft = styled(TeamMember)`
 
 const TeamMemberRight = styled(TeamMember)`
   @media (min-width: 1440px) {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 6px;
+    margin-right: -6px;
   }
   @media (max-width: 425px) {
     padding-right: 0px;

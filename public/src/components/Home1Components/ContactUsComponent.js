@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "react-bootstrap"; // Bootstrap components
-
 
 const ContactUsComponent = () => (
-  <ContainerStyle className="container my-5">
+  <Container className="container my-5">
     <div className="row">
       <div className="col-lg-6 col-md-12">
         <ContactImage
@@ -63,10 +61,10 @@ const ContactUsComponent = () => (
         </TextBox>
       </div>
     </div>
-  </ContainerStyle>
+  </Container>
 );
 
-const ContainerStyle = styled(Container)`
+const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center; // Center horizontally
@@ -78,9 +76,10 @@ const ContainerStyle = styled(Container)`
     justify-content: center; // Center horizontally
     align-items: center; // Center vertically
     margin-top: 0px !important;
-
+    margin-left: 25px;
+    margin-right: 10px;
   }
-  @media (max-width: 425px) {
+  @media (max-width: 320px) {
     flex-direction: column; // Stack elements vertically on smaller screens
     justify-content: center; // Center horizontally
     align-items: center; // Center vertically
@@ -92,7 +91,6 @@ const ContainerStyle = styled(Container)`
 
 const ContactImage = styled.img`
   max-width: 100%;
-  padding: 0px;
 
   @media (min-width: 1440px) {
     width: 84%;
@@ -100,9 +98,9 @@ const ContactImage = styled.img`
     margin-left: 69px;
   }
 
-  @media (max-width: 768px) and (min-width: 321px) {
+  @media (max-width: 768px) {
     width: 100%; // Reduce the image size to 80% of its container
-    padding: 0px 80px;
+    margin: 0 auto 20px;
   }
 
   @media (max-width: 320px) {
@@ -113,7 +111,7 @@ const ContactImage = styled.img`
 
 const TextBox = styled.div`
   @media (min-width: 1440px) {
-    margin-top: -1px;
+    margin-top: -4px;
   }
   display: flex;
   flex-direction: column;
@@ -181,7 +179,7 @@ const NameWrapper = styled.div`
   @media (min-width: 1025px) {
     flex-direction: row;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 768px) {
     margin-left: 0px;
     margin-right: 0px;
     gap: 0px;
@@ -199,7 +197,7 @@ const FormInput1 = styled.input`
   max-width: 100%;
   font-weight: 400;
   line-height: 24px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1440px) {
     width: 242.21px;
     height: 61.58px;
   }
@@ -236,12 +234,11 @@ const FormInput2 = styled.input`
   line-height: 24px;
   padding: 21px 33px 21px 23px;
   margin-top: 16px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1440px) {
     width: 242.21px;
     height: 61.58px;
   }
   @media (max-width: 1024px) {
-   
     width: 100%;
   }
   @media (max-width: 320px) {
@@ -265,25 +262,24 @@ const FormInput3 = styled.input`
   font-size: 15px;
   letter-spacing: 1px;
   max-width: 100%;
-  width: 100%;
   font-size: 16px;
   letter-spacing: 1.6px;
   font-weight: 400;
   line-height: 24px;
   padding: 21px 33px 21px 23px;
   @media (max-width: 768px) {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-right: 20px;
+    margin-bottom: 30px;
   }
   margin-top: 19px;
   margin-left: 38px;
   padding: 21px 33px 21px 23px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1440px) {
     width: 520px;
     height: 61.58px;
   }
 
-  width: 100%;
+  width: 92%;
   @media (max-width: 1024px) and (min-width: 426px) {
     width: 100%;
     margin: 20px 0px;
@@ -308,15 +304,16 @@ const FormInput4 = styled.input`
   width: 100%;
   font-size: 16px;
   letter-spacing: 1.6px;
-  max-width: 100%;
+  width: 100%;
   font-weight: 400;
   line-height: 24px;
   @media (min-width: 768px) {
     margin-bottom: 30px;
   }
   margin-top: 19px;
+  margin-left: 38px;
   padding: 21px 33px 21px 23px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1440px) {
     width: 520px;
     height: 61.58px;
     margin-left: 38px;
@@ -327,6 +324,7 @@ const FormInput4 = styled.input`
     width: 100%;
     margin: 20px 0px;
   }
+  width: 92%;
 
   @media (max-width: 1024px) and (min-width: 426px) {
     width: 100%;
@@ -347,13 +345,12 @@ const FormInput5 = styled.input`
   letter-spacing: 1.6px;
   font-weight: 400;
   line-height: 24px;
-  max-width: 100%;
-  width: 100%;
   @media (max-width: 768px) {
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom: 30px;
     margin: 20px 0px;
   }
+  width: 92%;
 
   @media (max-width: 1024px) and (min-width: 426px) {
     width: 100%;
@@ -362,7 +359,7 @@ const FormInput5 = styled.input`
   }
   margin-top: 9px;
   margin-left: 38px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1440px) {
     width: 520px;
     height: 239.47px;
   }
@@ -384,18 +381,13 @@ const SubmitButton = styled.input`
   padding: 16px 56px;
   margin-top: 20px;
   letter-spacing: 1px;
- 
+  margin-left: 37px;
   margin-top: 33px;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 1.6px;
   text-align: center;
-  @media (min-width: 1440px) {
-    margin-left: 37px;}
-  @media (max-width: 1024px)and (min-width:769px) {
-    margin-left: 100px;}
-
   @media (max-width: 425px) {
     margin-left: 0px;
     margin-right: 0px;
