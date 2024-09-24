@@ -98,6 +98,15 @@ display:flex;
 flex-direction: column;
 justify-content: start;
 margin-left: 64px;
+@media (max-width: 376px) {
+    margin-left: 30px;
+  }
+  @media (max-width: 350px) {
+    margin-left: 20px;
+  }
+  @media (max-width: 330px) {
+    margin-left: 10px;
+  }
 @media (max-width: 320px) {
     margin-left: 0px;
   }
