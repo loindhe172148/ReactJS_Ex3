@@ -184,7 +184,12 @@ const NameWrapper = styled.div`
   @media (max-width: 1170px) {
     margin-left: 0px;
     margin-right: 0px;
-    gap: 0px;
+    gap: 10px;
+  }
+  @media (max-width: 992px) {
+    margin-left: 0px;
+    margin-right: 0px;
+    gap: 00px;
   }
 `;
 
