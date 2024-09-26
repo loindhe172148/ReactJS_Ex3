@@ -109,15 +109,27 @@ const StyledNavbarCollapse = styled(Navbar.Collapse)`
   @media (max-width: 320px) {
     flex-basis: 100%;
   }
+  @media (max-width: 992px) {
+   background-color:rgb(185, 185, 185);
+  border-radius: 20px;
+  position: absolute; /* Thanh điều hướng sẽ tràn ra và đè lên nội dung */
+  top: 100%; /* Đặt ngay phía dưới thanh navbar */
+    right: 10px;
+    width: 30%; /* Đảm bảo thanh điều hướng chiếm hết chiều rộng */
+    background-color: #fff; /* Màu nền cho thanh điều hướng */
+    z-index: 1000; /* Đảm bảo rằng thanh điều hướng hiển thị trên các phần khác */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển mượt mà */
+    border: 1px solid  black;
+  }
 `;
 
 const StyledLogo = styled.img`
   @media (min-width: 769px) {
     margin-top: 6px;
   }
-  @media (max-width: 320px) {
+  @media (max-width: 425px) {
     height: 100%;
-    width: 100%;
+    width: 90%;
   }
 `;
 
@@ -134,12 +146,12 @@ const Home1Link = styled(Nav.Link)`
   @media (min-width: 769px) {
     text-align: center;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     text-align: center;
     margin-left: 0px;
-    background-color: rgb(248, 249, 255);
+    background-color:none !important;
     margin-top: 0px;
-    border: 1px solid black;
+    
   }
 `;
 
@@ -156,12 +168,12 @@ const Home2Link = styled(Nav.Link)`
     margin-top: 5px;
     margin-left: 29px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     text-align: center;
     margin-left: 0px;
-    background-color: rgb(248, 249, 255);
+    background-color:none !important;
     margin-top: 0px;
-    border: 1px solid black;
+    
   }
 `;
 
@@ -179,12 +191,12 @@ const Home3Link = styled(Nav.Link)`
     margin-top: 5px;
     margin-left: 27px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     text-align: center;
     margin-left: 0px;
-    background-color: rgb(248, 249, 255);
+    background-color:none !important;
     margin-top: 0px;
-    border: 1px solid black;
+    
   }
 `;
 
@@ -198,12 +210,12 @@ const Home4Link = styled(Nav.Link)`
     margin-top: 5px;
     margin-left: 30px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     text-align: center;
     margin-left: 0px;
-    background-color: rgb(248, 249, 255);
+    background-color:none !important;
     margin-top: 0px;
-    border: 1px solid black;
+    
   }
 `;
 
@@ -217,12 +229,12 @@ const Home5Link = styled(Nav.Link)`
     margin-top: 6px;
     margin-left: 31px;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     text-align: center;
     margin-left: 0px;
-    background-color: rgb(248, 249, 255);
+    background-color:none !important;
     margin-top: 0px;
-    border: 1px solid black;
+    
   }
 `;
 
@@ -233,20 +245,21 @@ const Home6Link = styled(Nav.Link)`
   font-size: 17px;
   letter-spacing: 1.5px;
   display: inline-block;
-  @media (min-width: 769px) {
+  @media (min-width: 992px) {
     margin-left: 43px;
     background-color: #ff64ae;
     padding: 12px 40px 15px 40px !important;
     color: white;
   }
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     color: #8b8b8b;
     text-align: center;
-    background-color: rgb(248, 249, 255);
     margin-left: 0px;
     border-radius: 0px ;
     margin-top: 0px;
-    border: 1px solid black;
+    
+    padding-right: 0px !important;
+    padding-left: 0px !important;
   }
 `;
 // Wrapper for the entire slider

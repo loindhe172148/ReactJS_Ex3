@@ -176,6 +176,7 @@ const ServiceCard = styled.div`
   padding-bottom: 51px;
   @media (min-width: 769px) {
     margin-top: 69px;
+    
   }
   &:hover {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
@@ -254,6 +255,7 @@ const ServiceCard = styled.div`
     padding-bottom: 0px;
     margin-top: 50px;
     gap: 0px;
+    height:100%;
     br{
       display: 0px;
     }
