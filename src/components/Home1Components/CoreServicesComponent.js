@@ -52,6 +52,7 @@ const CoreSerivcesComponent = () => (
 
 // Styled components
 const ColStyles =styled(Col)`
+
 @media (max-width: 768px) {
     margin: 0px;
     padding: 0px 10px;
@@ -158,7 +159,10 @@ const ServicesRow = styled(Row)`
    padding: 0px 30px ;
 
   }
- 
+  @media (max-width: 992px) and(min-width: 768px) {
+    flex-direction: column; /* Các thẻ xuống dòng tại 992px */
+    gap: 30px; /* Thêm khoảng cách giữa các thẻ */
+  }
   @media (max-width: 320px) {
     margin-left: 0px;
     margin-right: 0px;
@@ -174,6 +178,7 @@ const ServiceCard = styled.div`
   width: 100%;
   padding:30px 5px;
   padding-bottom: 51px;
+  
   @media (min-width: 769px) {
     margin-top: 69px;
     
@@ -255,7 +260,7 @@ const ServiceCard = styled.div`
     padding-bottom: 0px;
     margin-top: 50px;
     gap: 0px;
-    height:100%;
+    height:90%;
     br{
       display: 0px;
     }

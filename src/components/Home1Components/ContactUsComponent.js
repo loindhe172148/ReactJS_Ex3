@@ -181,7 +181,7 @@ const NameWrapper = styled.div`
   @media (min-width: 1025px) {
     flex-direction: row;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: 1170px) {
     margin-left: 0px;
     margin-right: 0px;
     gap: 0px;
@@ -199,7 +199,7 @@ const FormInput1 = styled.input`
   max-width: 100%;
   font-weight: 400;
   line-height: 24px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1171px) {
     width: 242.21px;
     height: 61.58px;
   }
@@ -213,7 +213,7 @@ const FormInput1 = styled.input`
     margin-right: 0px;
     margin: 20px 0px;
   }
-  @media (max-width: 1024px) and (min-width: 426px) {
+  @media (max-width: 1170px) and (min-width: 426px) {
     width: 100%;
     margin: 20px 0px;
   }
@@ -236,7 +236,7 @@ const FormInput2 = styled.input`
   line-height: 24px;
   padding: 21px 33px 21px 23px;
   margin-top: 16px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1171px) {
     width: 242.21px;
     height: 61.58px;
   }
@@ -249,7 +249,7 @@ const FormInput2 = styled.input`
     margin-right: 0px;
     margin: 20px 0px;
   }
-  @media (max-width: 1024px) and (min-width: 426px) {
+  @media (max-width: 1170px) and (min-width: 426px) {
     width: 100%;
     margin: 20px 0px;
   }
@@ -278,13 +278,13 @@ const FormInput3 = styled.input`
   margin-top: 19px;
   margin-left: 38px;
   padding: 21px 33px 21px 23px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1171px) {
     width: 520px;
     height: 61.58px;
   }
 
   width: 100%;
-  @media (max-width: 1024px) and (min-width: 426px) {
+  @media (max-width: 1170px) and (min-width: 426px) {
     width: 100%;
     margin: 20px 0px;
   }
@@ -316,7 +316,7 @@ const FormInput4 = styled.input`
   }
   margin-top: 19px;
   padding: 21px 33px 21px 23px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1171px) {
     width: 520px;
     height: 61.58px;
     margin-left: 38px;
@@ -328,7 +328,7 @@ const FormInput4 = styled.input`
     margin: 20px 0px;
   }
 
-  @media (max-width: 1024px) and (min-width: 426px) {
+  @media (max-width: 1170px) and (min-width: 426px) {
     width: 100%;
     margin: 20px 0px;
   }
@@ -355,14 +355,14 @@ const FormInput5 = styled.input`
     margin: 20px 0px;
   }
 
-  @media (max-width: 1024px) and (min-width: 426px) {
+  @media (max-width: 1170px) and (min-width: 426px) {
     width: 100%;
     margin: 20px 0px;
     padding-top: 30px;
   }
   margin-top: 9px;
   margin-left: 38px;
-  @media (min-width: 1025px) {
+  @media (min-width: 1171px) {
     width: 520px;
     height: 239.47px;
   }

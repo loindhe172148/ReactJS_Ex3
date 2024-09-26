@@ -187,6 +187,10 @@ const TeamMember = styled(Col)`
     padding-bottom: 0px;
     padding-top: 0px;
   }
+  @media (min-width: 768px) and (max-width: 1439px) {
+  max-width: 32%; /* Set a specific width for screens between 992px and 1024px */
+}
+
   @media (max-width: 768px) and (min-width: 321px) {
     padding: 0px;
     margin: auto;
